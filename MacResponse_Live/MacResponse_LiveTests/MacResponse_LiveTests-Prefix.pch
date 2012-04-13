@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MacResponse_LiveTests' target in the 'MacResponse_LiveTests' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="all" name="Create Runnable Jar for MacResponse">
+    <!--ANT 1.7 is required -->
+    <target name="win32_x86">
+        <mkdir dir="jars"/>
+        <jar destfile="./jars/MacResponseConsole_win32_x86.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.ainfosec.macresponse.console.Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="./bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="./xstream-1.3.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./xpp3_min-1.1.4c.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itextpdf-5.1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itextrtf.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itext-2.1.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./swt-3.7.1-win32-x86.jar"/>
+        </jar>
+    </target>
+
+    <target name="win32_x86_64">
+        <mkdir dir="jars"/>
+        <jar destfile="./jars/MacResponseConsole_win32_x86_64.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.ainfosec.macresponse.console.Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="./bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="./xstream-1.3.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./xpp3_min-1.1.4c.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itextpdf-5.1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itextrtf.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itext-2.1.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./swt-3.7.1-win32-x86_64.jar"/>
+        </jar>
+    </target>
+
+    <target name="macosx_x86_64">
+        <mkdir dir="jars"/>
+        <jar destfile="./jars/MacResponseConsole_macosx_x86_64.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.ainfosec.macresponse.console.Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="./bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="./xstream-1.3.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./xpp3_min-1.1.4c.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itextpdf-5.1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itextrtf.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itext-2.1.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./swt-3.7.1-macosx-x86_64.jar"/>
+        </jar>
+    </target>
+
+    <target name="macosx_x86">
+        <mkdir dir="jars"/>
+        <jar destfile="./jars/MacResponseConsole_macosx_x86.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.ainfosec.macresponse.console.Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="./bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="./xstream-1.3.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./xpp3_min-1.1.4c.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itextpdf-5.1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itextrtf.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itext-2.1.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./swt-3.7.1-macosx-x86.jar"/>
+        </jar>
+    </target>
+
+    <target name="linux_x86">
+        <mkdir dir="jars"/>
+        <jar destfile="./jars/MacResponseConsole_linux_x86.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.ainfosec.macresponse.console.Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="./bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="./xstream-1.3.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./xpp3_min-1.1.4c.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itextpdf-5.1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itextrtf.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itext-2.1.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./swt-3.7.1-gtk-linux-x86.jar"/>
+        </jar>
+    </target>
+
+    <target name="linux_x86_64">
+        <mkdir dir="jars"/>
+        <jar destfile="./jars/MacResponseConsole_linux_x86_64.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.ainfosec.macresponse.console.Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="./bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="./xstream-1.3.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./xpp3_min-1.1.4c.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itextpdf-5.1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itextrtf.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./itext-2.1.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="./swt-3.7.1-gtk-linux-x86_64.jar"/>
+        </jar>
+    </target>
+	
+    <target name="all" depends="macosx_x86, macosx_x86_64, win32_x86, win32_x86_64, linux_x86, linux_x86_64">
+    </target>
+</project>

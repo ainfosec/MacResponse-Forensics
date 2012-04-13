@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32D94FC60562CBF700B6AF17 /* MemoryAccessIOKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A224C3EFF42367911CA2CB7 /* MemoryAccessIOKit.h */; };
+		32D94FCA0562CBF700B6AF17 /* MemoryAccessIOKit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A224C3FFF42367911CA2CB7 /* MemoryAccessIOKit.cpp */; settings = {ATTRIBUTES = (); }; };
+		831F582912FB54490083A08A /* kext_shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 831F582812FB54490083A08A /* kext_shared.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A224C3EFF42367911CA2CB7 /* MemoryAccessIOKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryAccessIOKit.h; sourceTree = "<group>"; };
+		1A224C3FFF42367911CA2CB7 /* MemoryAccessIOKit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryAccessIOKit.cpp; sourceTree = "<group>"; };
+		32D94FD00562CBF700B6AF17 /* MemoryAccessIOKit.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryAccessIOKit.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		831F582812FB54490083A08A /* kext_shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kext_shared.h; sourceTree = "<group>"; };
+		8DA8362C06AD9B9200E5AC22 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32D94FCB0562CBF700B6AF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* MemoryAccessIOKit */ = {
+			isa = PBXGroup;
+			children = (
+				247142CAFF3F8F9811CA285C /* Source */,
+				8DA8362C06AD9B9200E5AC22 /* Kernel.framework */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = MemoryAccessIOKit;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32D94FD00562CBF700B6AF17 /* MemoryAccessIOKit.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		247142CAFF3F8F9811CA285C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1A224C3EFF42367911CA2CB7 /* MemoryAccessIOKit.h */,
+				1A224C3FFF42367911CA2CB7 /* MemoryAccessIOKit.cpp */,
+				831F582812FB54490083A08A /* kext_shared.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		32D94FC50562CBF700B6AF17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D94FC60562CBF700B6AF17 /* MemoryAccessIOKit.h in Headers */,
+				831F582912FB54490083A08A /* kext_shared.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		32D94FC30562CBF700B6AF17 /* MemoryAccessIOKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91D908733DB10010E9CD /* Build configuration list for PBXNativeTarget "MemoryAccessIOKit" */;
+			buildPhases = (
+				32D94FC50562CBF700B6AF17 /* Headers */,
+				32D94FC70562CBF700B6AF17 /* Resources */,
+				32D94FC90562CBF700B6AF17 /* Sources */,
+				32D94FCB0562CBF700B6AF17 /* Frameworks */,
+				32D94FCC0562CBF700B6AF17 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemoryAccessIOKit;
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+			productName = MemoryAccessIOKit;
+			productReference = 32D94FD00562CBF700B6AF17 /* MemoryAccessIOKit.kext */;
+			productType = "com.apple.product-type.kernel-extension.iokit";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 1DEB91DD08733DB10010E9CD /* Build configuration list for PBXProject "MemoryAccessIOKit" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* MemoryAccessIOKit */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32D94FC30562CBF700B6AF17 /* MemoryAccessIOKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32D94FC70562CBF700B6AF17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		32D94FCC0562CBF700B6AF17 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32D94FC90562CBF700B6AF17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D94FCA0562CBF700B6AF17 /* MemoryAccessIOKit.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91DA08733DB10010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = Info.i386.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.yourcompany.driver.MemoryAccessIOKit;
+				MODULE_VERSION = 1.0;
+				PRODUCT_NAME = MemoryAccessIOKit;
+				SDKROOT = macosx10.5;
+				SUPPORTED_PLATFORMS = "i386 x86_64";
+				VALID_ARCHS = i386;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		1DEB91DB08733DB10010E9CD /* x86_64-RELEASE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = Info.x86_64.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.yourcompany.driver.MemoryAccessIOKit;
+				MODULE_VERSION = 1.0;
+				PRODUCT_NAME = MemoryAccessIOKit;
+				SDKROOT = macosx10.6;
+				SUPPORTED_PLATFORMS = "i386 x86_64";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = "x86_64-RELEASE";
+		};
+		1DEB91DE08733DB10010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-dD";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		1DEB91DF08733DB10010E9CD /* x86_64-RELEASE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = YES;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.x86_64.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = "-dD";
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = x86_64;
+			};
+			name = "x86_64-RELEASE";
+		};
+		83FF8D6E13A7D14A0081A959 /* i386-RELEASE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = YES;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.i386.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_CFLAGS = "-dD";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				VALID_ARCHS = i386;
+			};
+			name = "i386-RELEASE";
+		};
+		83FF8D6F13A7D14A0081A959 /* i386-RELEASE */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = Info.i386.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.yourcompany.driver.MemoryAccessIOKit;
+				MODULE_VERSION = 1.0;
+				PRODUCT_NAME = MemoryAccessIOKit;
+				SDKROOT = macosx10.5;
+				SUPPORTED_PLATFORMS = "i386 x86_64";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = "i386-RELEASE";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91D908733DB10010E9CD /* Build configuration list for PBXNativeTarget "MemoryAccessIOKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91DA08733DB10010E9CD /* Debug */,
+				1DEB91DB08733DB10010E9CD /* x86_64-RELEASE */,
+				83FF8D6F13A7D14A0081A959 /* i386-RELEASE */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "x86_64-RELEASE";
+		};
+		1DEB91DD08733DB10010E9CD /* Build configuration list for PBXProject "MemoryAccessIOKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91DE08733DB10010E9CD /* Debug */,
+				1DEB91DF08733DB10010E9CD /* x86_64-RELEASE */,
+				83FF8D6E13A7D14A0081A959 /* i386-RELEASE */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "x86_64-RELEASE";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

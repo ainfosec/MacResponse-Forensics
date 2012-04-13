@@ -1,0 +1,9 @@
+﻿/* Localized versions of Info.plist keys */
+
+<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.kpi.iokit</key>
+		<string>10.5</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>10.5</string>
+	</dict>
